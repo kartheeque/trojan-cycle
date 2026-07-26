@@ -1,5 +1,5 @@
 # ISSUE 8 — PANEL PROMPTS (pages 1–32) · self-contained format
-Iliad 4–6, Tier A. Same rules as Issues 1–7. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS. Restraint clauses load-bearing on pgs 8, 13, 19, 21; ichor is golden light, never red.
+Iliad 4–6, Tier A. Same rules as Issues 1–7. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS. Restraint clauses load-bearing on pgs 8, 13, 19, 21; ichor is golden light, never red.
 Reusable refs: singer, neleid-prince, muse, agamemnon, menelaus, odysseus, nestor, diomedes, ajax, idomeneus, achilles(idle), athena, aphrodite, apollo, zeus, hera, iris, hector, andromache, helen, paris, hecuba, helenus, glaucus, sarpedon, aeneas.
 
 > **TWO-LLM WORKFLOW (standing instructions for the image-generation session):**

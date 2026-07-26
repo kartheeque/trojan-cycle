@@ -1,5 +1,5 @@
 # ISSUE 6 — PANEL PROMPTS (pages 1–32) · self-contained format
-Per master-plan v0.5.4. Same rules as Issues 1–5. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS. Restraint clauses are load-bearing on pgs 8, 13, 23, 24.
+Per master-plan v0.5.4. Same rules as Issues 1–5. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS. Restraint clauses are load-bearing on pgs 8, 13, 23, 24.
 Reusable refs: singer, neleid-prince, muse, agamemnon, menelaus, odysseus, clytemnestra, calchas, achilles, patroclus, palamedes, helen, paris, priam, hector, antenor, nestor.
 
 > **TWO-LLM WORKFLOW (standing instructions for the image-generation session):**

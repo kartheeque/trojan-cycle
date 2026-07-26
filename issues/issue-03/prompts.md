@@ -1,5 +1,5 @@
 # ISSUE 3 — PANEL PROMPTS (pages 1–32) · self-contained format
-Same rules as Issues 1–2. Guard clause on every earthly scene; [STYLE-TABLET] register on pg02 ONLY (per master-plan ruling v0.5.3); divine radiance clause on god scenes. Ref-births marked with THEN CROP. Every prompt is fully self-contained — paste exactly as written. Panels are TEXTLESS.
+Same rules as Issues 1–2. Guard clause on every earthly scene; [STYLE-TABLET] register on pg02 ONLY (per master-plan ruling v0.5.3); divine radiance clause on god scenes. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Every prompt is fully self-contained — paste exactly as written. Panels are TEXTLESS.
 Reusable refs already in refs/: singer.png, neleid-prince.png, zeus.png, themis.png, muse.png, poseidon.png, apollo.png (background gods at the wedding may echo these).
 
 > **TWO-LLM WORKFLOW (standing instructions for the image-generation session):**

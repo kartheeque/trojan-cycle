@@ -1,5 +1,5 @@
 # ISSUE 7 — PANEL PROMPTS (pages 1–32) · self-contained format
-Part II begins: Iliad 1–3, Tier A. Same rules as Issues 1–6. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS.
+Part II begins: Iliad 1–3, Tier A. Same rules as Issues 1–6. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS.
 Reusable refs: singer, neleid-prince, muse, chryses, chryseis, agamemnon, menelaus, odysseus, nestor, calchas, achilles, patroclus, briseis, thetis, zeus, hera, athena, aphrodite, apollo, helen, paris, priam, hector, antenor, aeneas, sarpedon, glaucus, iris (born pg20), hephaestus (born pg14).
 
 > **TWO-LLM WORKFLOW (standing instructions for the image-generation session):**

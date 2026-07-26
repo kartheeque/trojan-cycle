@@ -1,5 +1,5 @@
 # ISSUE 4 — PANEL PROMPTS (pages 1–32) · self-contained format
-Same rules as Issues 1–3. Guard clause on earthly scenes; divine radiance clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS.
+Same rules as Issues 1–3. Guard clause on earthly scenes; divine radiance clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS.
 Reusable refs: singer, neleid-prince, muse, zeus, hera, athena, aphrodite, hermes, paris, agelaus, priam, hecuba, hector, cassandra, antenor, helen, menelaus, castor, polydeuces, tyndareus.
 
 > **TWO-LLM WORKFLOW (standing instructions for the image-generation session):**

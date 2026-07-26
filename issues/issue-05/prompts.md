@@ -1,5 +1,5 @@
 # ISSUE 5 — PANEL PROMPTS (pages 1–32) · self-contained format
-Per master-plan v0.5.4 (two-muster Cypria order). Same rules as Issues 1–4. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS.
+Per master-plan v0.5.4 (two-muster Cypria order). Same rules as Issues 1–4. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS.
 Reusable refs: singer, neleid-prince, muse, agamemnon, menelaus, odysseus, penelope, helen, paris, priam, hector, clytemnestra, ajax, diomedes, idomeneus, thetis, zeus, themis, hera, athena.
 
 > **TWO-LLM WORKFLOW (standing instructions for the image-generation session):**
