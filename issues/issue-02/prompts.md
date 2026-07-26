@@ -91,7 +91,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 
 ### i02-pg07-pn1.png — standard 4:3 — FOUR INFANTS
 ATTACH: refs/tyndareus.png, refs/leda.png
-MATCH LINE: map each in background.
+MATCH LINE: the king = refs/tyndareus.png — match his face EXACTLY: the same lean careworn face, long straight grey-white beard (not curly, not full), hair swept back from the brow. The queen = refs/leda.png — match her face exactly. Do not invent new faces for either.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Warm interior shot: the opened glowing shell halves on the shrine; two NURSES each holding a pair of swaddled INFANTS — EXACTLY FOUR swaddled infants in total in the whole image, two in each nurse's arms, no other babies anywhere; the graceful mature Mycenaean queen, dark hair in long locks under a slim gold diadem, flounced tiered skirt and fitted bodice in white and river-blue, gentle serene face, reaching toward the infants with BOTH HANDS OPEN AND EMPTY, holding no child herself, the aging Mycenaean king of Sparta with grey-white beard, olive-green mantle with a gold pin, careworn kingly face behind her, awe softening his careworn face. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i02-pg07-pn2.png — wide 16:9 — THE CHILDREN AT PLAY (regeneration: HELEN-CHILD ref already exists — match it, do not re-crop)
