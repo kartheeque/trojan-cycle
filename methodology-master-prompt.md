@@ -135,6 +135,8 @@ Content-safety grammar carried from the Trojan Cycle: violence by aftermath and 
 
 ## PHASE 8 — GENERATION, REVIEW, AND BUILD LOOP
 
+**Split-capability variant (read-only generator):** when the image-generation model can read the repository but cannot write to it, encode the division of labor in the prompt files themselves: ATTACH lines instruct the generator to fetch refs from the repo's `refs/` folder; a standing preamble tells it to hand finished images to the human operator under exact panel filenames; and ref-crops become REF-BIRTH pipeline steps executed by the verification-side model, which alone commits art, refs, and PRs. The human operator is the only bridge between the two models.
+
 1. Human generates art per prompts (any image model); multiple options allowed per contested panel (`-optionN` suffix).
 2. Model reviews every panel against prompt + bible: style consistency, ref-match, count-checks (the five-babies class of error), guard-clause violations, option adjudication with stated reasons. Crops due are executed before dependent panels generate.
 3. Model letters programmatically (`tools/build_all.py`): captions as page bands, dialogue as in-art balloons placed by face-zone geometry (balloons never cover faces; tails unambiguous; reading order by stagger), footnote strips, page numbers, gnomē plate, cover title.

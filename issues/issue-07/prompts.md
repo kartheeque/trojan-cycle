@@ -2,32 +2,39 @@
 Part II begins: Iliad 1–3, Tier A. Same rules as Issues 1–6. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS.
 Reusable refs: singer, neleid-prince, muse, chryses, chryseis, agamemnon, menelaus, odysseus, nestor, calchas, achilles, patroclus, briseis, thetis, zeus, hera, athena, aphrodite, apollo, helen, paris, priam, hector, antenor, aeneas, sarpedon, glaucus, iris (born pg20), hephaestus (born pg14).
 
+> **TWO-LLM WORKFLOW (standing instructions for the image-generation session):**
+> 1. You have READ access to this repository. For each panel below, fetch every file on its ATTACH line from the repo's `refs/` folder (same branch as this prompts file) and attach those images to the generation request together with the PROMPT text, used verbatim.
+> 2. Generate at the stated aspect ratio. Output must be completely TEXTLESS.
+> 3. You cannot commit. Hand the finished image to the human operator under its exact panel filename (iNN-pgNN-pnN.png); the operator relays it to the verification side (Claude), which reviews it against prompt and refs and commits it to `issues/issue-NN/art/`.
+> 4. Panels marked REF-BIRTH create a new reference face: after that panel passes verification, the verification side crops and commits the new ref to `refs/`. Do NOT generate any later panel that ATTACHes that ref until the ref file exists in the repo.
+
+
 ### i07-pg01-pn1.png — full page 3:4 — COVER — THE WRATH BY THE SEA
-ATTACH: refs/achilles.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png
 MATCH LINE: 'alone at the grey sea's edge, back half-turned.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Cover composition: Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build standing alone at the grey sea's edge under storm-light, back half-turned to the distant beach camp and far walls, wind tearing the red-gold hair sideways, the sea rising toward him as if listening; leave the upper quarter of sky calm for title lettering. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg02-pn1.png — wide 16:9 — FRAME — WATER FILLS A PRINT IN SAND
-ATTACH: refs/singer.png, refs/neleid-prince.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png, refs/neleid-prince.png
 MATCH LINE: map each: the bard already seated; the hall filling in silence.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Wide shot of an early Iron Age Ionian megaron hall at evening: timber columns, central hearth fire, hanging oil lamps, noble audience seated on benches, dark doorway open to a starry Aegean night: an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre already seated in his place before the lamps are fully lit, utterly composed; the hall filling around him in silence, listeners packing past the door; a young Ionian Greek nobleman, black curled hair bound with a fillet, fine wool chiton, gold armband, attentive noble face on the high seat, saying nothing. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg02-pn2.png — standard 4:3 — FRAME — NO QUESTION TONIGHT
-ATTACH: refs/neleid-prince.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/neleid-prince.png
 MATCH LINE: 'waiting; some nights are not for questions.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: a young Ionian Greek nobleman, black curled hair bound with a fillet, fine wool chiton, gold armband, attentive noble face simply waiting, hands folded, the firelight on a face that asks nothing. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg02-pn3.png — standard 4:3 — FRAME — A BURDEN AND AN HONOR
-ATTACH: refs/singer.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png
 MATCH LINE: 'hands settling on the strings.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Close shot: the hands of an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre settling onto the phorminx strings with the care of a man taking up something sacred and heavy at once; his blind face composed above. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg03-pn1.png — standard 4:3 — SING, GODDESS
-ATTACH: refs/singer.png, refs/muse.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png, refs/muse.png
 MATCH LINE: 'the Muse fully manifest tonight, attending.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Charged shot: an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre with face lifted in full invocation — and above the hearth-smoke, not faint tonight but FULLY MANIFEST and attending, a Muse: luminous woman of unearthly beauty, dark hair crowned with laurel, flowing pale gold robe, softly radiant against darkness, her radiance filling the roof-beams. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -36,14 +43,14 @@ ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Extreme close shot: aged fingers on taut strings, vision-gold rising off them like heat, the sepia hall dissolving at the frame edges. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg03-pn3.png — wide 16:9 — THE VISION AT FULL FLOOD
-ATTACH: refs/chryses.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/chryses.png
 MATCH LINE: 'the priest at the firelight's edge, exactly where six songs left him.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide shot in full color: the firelit assembly-ground of the Achaean beach camp before Troy: a thousand ships drawn up stern-first in ranks along the shore, huts of timber and hide between them, a palisade and ditch landward, the windy plain and the walls of Troy beyond at night — and at the edge of the light, staff and scarlet fillets raised, exactly where the last song held him, Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg04-pn1.png — standard 4:3 — THE SUPPLICATION
-ATTACH: refs/chryses.png, refs/agamemnon.png, refs/menelaus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/chryses.png, refs/agamemnon.png, refs/menelaus.png
 MATCH LINE: map each: the priest before the enthroned kings, ransom open.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Assembly shot: Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets before the enthroned kings with staff and fillets high, an open RANSOM-CHEST of gold and cloth at his feet; a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face and a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak centermost of the half-circle; the ringed army dense behind. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -52,19 +59,19 @@ ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide reaction shot around the assembly ring: thousands of firelit soldiers murmuring assent, heads nodding, hands opening toward the priest — every face in the great ring saying yes; the composition's flow converging on one unseen point of refusal. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg04-pn3.png — standard 4:3 — THE REFUSAL
-ATTACH: refs/agamemnon.png, refs/chryses.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/agamemnon.png, refs/chryses.png
 MATCH LINE: map each: the king risen and lashing; the old man flinching back a step.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Harsh shot: a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face risen from his throne, arm slashing down in refusal, face black; Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets flinching back a step, the fillets dipping; the assembly's murmur dying around them. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg05-pn1.png — wide 16:9 — THE SHORE OF THE LOUD SEA
-ATTACH: refs/chryses.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/chryses.png
 MATCH LINE: 'walking away small and silent along the tide-line.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide desolate shot: Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets walking away alone along the shore of a loud tumbling sea, small against the surf, the firelit camp shrinking behind him. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg05-pn2.png — standard 4:3 — THE PRAYER
-ATTACH: refs/chryses.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/chryses.png
 MATCH LINE: 'arms lifted to the darkening sky, the fillets streaming.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Prayer shot: Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets halted far down the empty shore, arms lifted to a darkening sky, the scarlet fillets streaming sideways in the sea-wind, his old face terrible with faith. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -89,87 +96,87 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ---
 
 ### i07-pg07-pn1.png — standard 4:3 — ACHILLES CALLS THE ASSEMBLY
-ATTACH: refs/achilles.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png
 MATCH LINE: 'standing to speak on the tenth day.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Assembly shot on the tenth day: Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build on his feet before the gathered army, open-handed, urgent; the pyre-smoke still hanging beyond the assembly ground; kings attending. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg07-pn2.png — standard 4:3 — THE SEER'S CONDITION
-ATTACH: refs/calchas.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/calchas.png
 MATCH LINE: 'rising pale, the condition before the truth.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot: Calchas the seer, gaunt middle-aged diviner, shaved head bound with a white fillet, dark feather-trimmed mantle, staring pale-grey eyes risen, pale and careful, one hand raised in the gesture of a man asking surety before he touches fire; his staring eyes flicking once toward the kings' bench. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg07-pn3.png — standard 4:3 — THE PLEDGE
-ATTACH: refs/achilles.png, refs/calchas.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png, refs/calchas.png
 MATCH LINE: map each: the instant pledge, hand out; the aim already taken.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Charged two-shot: Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build with his hand thrust out in absolute pledge to Calchas the seer, gaunt middle-aged diviner, shaved head bound with a white fillet, dark feather-trimmed mantle, staring pale-grey eyes — and his blazing sea-grey eyes already sliding past the seer toward an unseen throne; the seer steadying under the pledge. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg08-pn1.png — full page 3:4 — SPLASH — THE QUARREL AND THE HAND OF ATHENA
-ATTACH: refs/agamemnon.png, refs/achilles.png, refs/athena.png, refs/nestor.png, refs/odysseus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/agamemnon.png, refs/achilles.png, refs/athena.png, refs/nestor.png, refs/odysseus.png
 MATCH LINE: map each: the king mid-threat; the half-drawn sword; the goddess unseen by all but him, gripping his hair.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Full-page frozen instant in the assembly: a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face on his feet with scepter leveled, face black with fury, threat just spoken — opposite him Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build in mid-motion, the great sword HALF-DRAWN from its sheath, his whole body one intention — and behind him, visible only to him and the viewer, Athena goddess of wisdom and war, tall grey-eyed goddess, dark hair under a crested bronze helmet pushed back from her brow, aegis cloak fringed with small serpents, tall spear, keen calm face manifest at half-divine scale, her hand CLOSED IN HIS RED-GOLD HAIR, hauling his head back, grey eyes blazing an inch from his; around them the ringed army seeing only a man strangely frozen at his hilt; Nestor king of Pylos, very old but hale counselor-king, long white beard, clear bright undimmed eyes, fine wool mantle, a gold-studded staff half-risen in alarm, a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt watching everything. Leave calm space top and bottom for ornate caption plates. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg09-pn1.png — standard 4:3 — WORDS WORSE THAN SWORDS
-ATTACH: refs/achilles.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png
 MATCH LINE: 'sword sheathed; the assembly scepter taken up instead.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot: Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build, sword rammed back in its sheath, seizing up instead the assembly's great gold-studded SCEPTER, his beautiful face cold now past fury — the more dangerous temperature. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg09-pn2.png — standard 4:3 — THE OATH ON THE SCEPTER
-ATTACH: refs/achilles.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png
 MATCH LINE: 'the scepter held high, the oath spoken.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Oath shot: Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build holding the great scepter high overhead in one fist, gold studs blazing in the light, the dead wood itself seeming to listen; the assembly rigid below his raised arm. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg09-pn3.png — standard 4:3 — THE SCEPTER FLUNG DOWN
-ATTACH: refs/achilles.png, refs/nestor.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png, refs/nestor.png
 MATCH LINE: map each: the throw; the old man rising with hands out.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Crack of a shot: the scepter FLUNG ringing onto the stones between the two factions, bouncing; Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build already turning away to sit; Nestor king of Pylos, very old but hale counselor-king, long white beard, clear bright undimmed eyes, fine wool mantle, a gold-studded staff rising honey-grave with both old hands out into the shockwave — and the composition already conceding his wisdom will not land. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg10-pn1.png — standard 4:3 — THE GOD'S DEBT SAILS
-ATTACH: refs/chryseis.png, refs/odysseus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/chryseis.png, refs/odysseus.png
 MATCH LINE: map each at the ship.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Shore shot: Chryseis daughter of the priest of Apollo, slight auburn-haired young woman, delicate face, white priestly-household dress with a laurel band embarked on a fast black ship, a hecatomb of garlanded oxen being loaded; a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt in command at the stern; sails loosing for Chryse. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg10-pn2.png — standard 4:3 — THE HERALDS SPARED
-ATTACH: refs/achilles.png, refs/patroclus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png, refs/patroclus.png
 MATCH LINE: map each: the wretched heralds spared with terrible courtesy; the friend sent inside.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Hut-front shot: two HERALDS of the king standing wretched and afraid before Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build, who addresses them with terrible gentle courtesy, one hand absolving them — while his eyes do not absolve their master; behind him Patroclus son of Menoetius, gentle strong young warrior slightly older than Achilles, short dark hair, kind steady face, plain corslet turning to go inside at his word, shoulders heavy. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg10-pn3.png — standard 4:3 — THE TAKING OF BRISEIS
-ATTACH: refs/patroclus.png, refs/briseis.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/patroclus.png, refs/briseis.png
 MATCH LINE: map each: he leading her out by the hand to the heralds; she looking back; he unable to look at her.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. The knife-quiet shot: Patroclus son of Menoetius, gentle strong young warrior slightly older than Achilles, short dark hair, kind steady face, plain corslet leading Briseis of Lyrnessus, gentle dark-haired young noblewoman, soft grieving dignified face, simple fine Anatolian dress out by the hand and giving her over to the two heralds — the woman going UNWILLINGLY, her face turned back toward the huts; and Patroclus son of Menoetius, gentle strong young warrior slightly older than Achilles, short dark hair, kind steady face, plain corslet standing with his eyes fixed on the ground, unable to look at her at all. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg11-pn1.png — wide 16:9 — THE WEEPING BY THE SEA
-ATTACH: refs/achilles.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png
 MATCH LINE: 'apart from all his people, arms out over the waves.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide grief shot: Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build sitting utterly apart on the shore of the grey salt water, openly weeping, arms stretched out over the waves toward the deep; the camp far behind; the sea listening. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg11-pn2.png — standard 4:3 — THE MIST THAT WAS HIS MOTHER
-ATTACH: refs/thetis.png, refs/achilles.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/thetis.png, refs/achilles.png
 MATCH LINE: map each: she risen like mist, her hand on his bowed head.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Tender divine shot: Thetis the sea-goddess, slender luminous divine woman, silver-touched dark hair flowing like water, sea-grey and silver robes that ripple like the tide, beautiful sorrowful immortal face risen from the grey water like a standing mist, seated now beside her son on the shingle, her hand on his bowed head; his shoulders still shaking; the surf hushed around them. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg11-pn3.png — standard 4:3 — THE TERRIBLE REQUEST
-ATTACH: refs/achilles.png, refs/thetis.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/achilles.png, refs/thetis.png
 MATCH LINE: map each: his tear-streaked face lifted; hers grieving past what he asks.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Close two-shot: the tear-streaked face of Achilles son of Peleus and Thetis, the most beautiful and terrible of heroes, young and beardless, long red-gold hair, blazing sea-grey eyes, swift perfect build lifted to his mother's, the request burning in it; and the immortal face of Thetis the sea-goddess, slender luminous divine woman, silver-touched dark hair flowing like water, sea-grey and silver robes that ripple like the tide, beautiful sorrowful immortal face already grieving somewhere far beyond and beneath the words she is hearing. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg12-pn1.png — standard 4:3 — THE FATHER AND THE CHILD
-ATTACH: refs/chryses.png, refs/chryseis.png, refs/odysseus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/chryses.png, refs/chryseis.png, refs/odysseus.png
 MATCH LINE: map each at the altar-steps.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Joy shot at the altar-steps of a small shrine-town: Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets receiving Chryseis daughter of the priest of Apollo, slight auburn-haired young woman, delicate face, white priestly-household dress with a laurel band into his arms, the old face broken open with joy; a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt standing formal and correct at the rite's edge; the garlanded hecatomb ranged behind. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg12-pn2.png — standard 4:3 — THE PAEAN ALL DAY
-ATTACH: refs/chryses.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/chryses.png
 MATCH LINE: 'the second prayer over the smoking hecatomb.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Rite shot: the hecatomb smoking to heaven; Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets with lifted arms making the second prayer over it; young men ranged singing, the day golden; and high in the smoke, the faintest suggestion of a listening radiance. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -180,68 +187,68 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ---
 
 ### i07-pg13-pn1.png — standard 4:3 — THE TWELFTH DAWN
-ATTACH: refs/thetis.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/thetis.png
 MATCH LINE: 'rising with the mist to the highest peak.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Ascension shot: Thetis the sea-goddess, slender luminous divine woman, silver-touched dark hair flowing like water, sea-grey and silver robes that ripple like the tide, beautiful sorrowful immortal face rising from the grey sea with the dawn mist, trailing sea-light, ascending toward Olympus above the clouds: an open pillared hall of pale stone on a mountain summit floating over a sea of clouds, golden light, distant peaks far above, where one figure sits apart on the topmost peak. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg13-pn2.png — standard 4:3 — KNEES AND CHIN
-ATTACH: refs/thetis.png, refs/zeus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/thetis.png, refs/zeus.png
 MATCH LINE: map each in the full ancient posture of supplication.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. The supplication shot: Thetis the sea-goddess, slender luminous divine woman, silver-touched dark hair flowing like water, sea-grey and silver robes that ripple like the tide, beautiful sorrowful immortal face down before enthroned Zeus king of the gods: powerful mature build, dark curling hair and full dark beard, calm sovereign face, deep crimson archaic robe, golden radiance, holding a scepter tipped with a golden eagle in the complete ancient posture — left arm wrapped around his knees, right hand raised touching his bearded chin — the sea-goddess a suppliant, her upturned face all petition; his sovereign face above, troubled, gazing far away. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg13-pn3.png — standard 4:3 — THE NOD
-ATTACH: refs/zeus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/zeus.png
 MATCH LINE: 'the dark brows bending; Olympus shaking to its roots.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. The irrevocable shot: Zeus king of the gods: powerful mature build, dark curling hair and full dark beard, calm sovereign face, deep crimson archaic robe, golden radiance, holding a scepter tipped with a golden eagle bowing his dark brows in the NOD — the ambrosial hair streaming forward from the sovereign head — and all around him the very stones and light of Olympus above the clouds: an open pillared hall of pale stone on a mountain summit floating over a sea of clouds, golden light, distant peaks visibly TREMBLING, cups shivering on distant tables, clouds recoiling from the mountain's roots. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg14-pn1.png — standard 4:3 — THE QUARREL OF HEAVEN
-ATTACH: refs/hera.png, refs/zeus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/hera.png, refs/zeus.png
 MATCH LINE: map each: honed words; thunder-browed warning; gods staring at their plates.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Divine feast shot gone cold: Hera queen of the gods, majestic mature goddess, dark braided hair under a high golden crown, white and royal purple archaic robes with peacock motifs, proud sovereign face leaning at Zeus king of the gods: powerful mature build, dark curling hair and full dark beard, calm sovereign face, deep crimson archaic robe, golden radiance, holding a scepter tipped with a golden eagle with honed words, his thunder-browed warning turning on her; down the golden table the feasting gods gone silent, staring fixedly at their plates. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg14-pn2.png — standard 4:3 — THE CUP-BEARER (births HEPHAESTUS: crop refs/hephaestus.png)
-ATTACH: refs/hera.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/hera.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Warm comic shot: Hephaestus the smith of the gods, mighty-shouldered lame god, tangled dark beard, soot-marked tunic over one shoulder, kind clever face, a golden crutch-staff heaving up with the great two-handled cup, bustling deliberately, pouring for his mother Hera queen of the gods, majestic mature goddess, dark braided hair under a high golden crown, white and royal purple archaic robes with peacock motifs, proud sovereign face first with clownish tender ceremony; her stern face beginning to crack despite itself. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 REF-BIRTH: refs/hephaestus.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i07-pg14-pn3.png — wide 16:9 — UNQUENCHABLE LAUGHTER
-ATTACH: refs/hephaestus.png, refs/zeus.png, refs/hera.png, refs/apollo.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/hephaestus.png, refs/zeus.png, refs/hera.png, refs/apollo.png
 MATCH LINE: map each along the feast.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide golden shot: the whole hall of the gods breaking into UNQUENCHABLE LAUGHTER as Hephaestus the smith of the gods, mighty-shouldered lame god, tangled dark beard, soot-marked tunic over one shoulder, kind clever face, a golden crutch-staff puffs up and down the table with the wine — Hera queen of the gods, majestic mature goddess, dark braided hair under a high golden crown, white and royal purple archaic robes with peacock motifs, proud sovereign face smiling and taking the cup, Zeus king of the gods: powerful mature build, dark curling hair and full dark beard, calm sovereign face, deep crimson archaic robe, golden radiance, holding a scepter tipped with a golden eagle's thunder dissolving, and at the hall's end Apollo the far-shooter, radiant young god of terrible beauty, long unshorn golden hair, silver bow, dark-silver quiver, cold perfect face taking up a golden lyre, the Muses gathering to answer him; divine ease restored entire. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg15-pn1.png — standard 4:3 — FRAME — SURELY THE KING WAS WRONG
-ATTACH: refs/neleid-prince.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/neleid-prince.png
 MATCH LINE: 'hot.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: a young Ionian Greek nobleman, black curled hair bound with a fillet, fine wool chiton, gold armband, attentive noble face hot with the verdict, hand chopping the air, certain. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg15-pn2.png — standard 4:3 — FRAME — RIGHT AGAINST RIGHT
-ATTACH: refs/singer.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png
 MATCH LINE: 'refusing the easy coin.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre refusing the easy answer, both hands held out like balanced scale-pans, the ember-light divided across his face. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg15-pn3.png — standard 4:3 — FRAME — ZEUS BEGINS WITH A LIE
-ATTACH: refs/singer.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png
 MATCH LINE: 'hand rising toward the vision again.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre lifting one hand toward the rising vision-gold, his face going shadowed with what he must sing next. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg16-pn1.png — standard 4:3 — THE FALSE DREAM
-ATTACH: refs/agamemnon.png, refs/nestor.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/agamemnon.png, refs/nestor.png
 MATCH LINE: 'a figure of smoke wearing the old counselor's face, bending over the sleeping king.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Uncanny night shot: sleeping a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face in his hut — and bending over the bed a DREAM-FIGURE woven of smoke and starlight wearing the exact likeness of Nestor king of Pylos, very old but hale counselor-king, long white beard, clear bright undimmed eyes, fine wool mantle, a gold-studded staff, one spectral hand raised in false counsel; the real night pressing at the door-flap. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg16-pn2.png — standard 4:3 — THE KING BELIEVES
-ATTACH: refs/agamemnon.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/agamemnon.png
 MATCH LINE: 'waking aflame, dressing in his finest, taking up the ancestral scepter.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Dawn shot: a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face awake and aflame with the dream, dressing in his softest tunic and great cloak, lifting the deathless ancestral SCEPTER from its stand with both hands — a man certain the city falls today. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg16-pn3.png — standard 4:3 — THE TEST PROPOSED
-ATTACH: refs/agamemnon.png, refs/nestor.png, refs/odysseus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/agamemnon.png, refs/nestor.png, refs/odysseus.png
 MATCH LINE: map each in the elders' council.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Council shot: a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face laying out his cleverness to the ring of elders — one hand miming the false offer, the other the shout-them-back; Nestor king of Pylos, very old but hale counselor-king, long white beard, clear bright undimmed eyes, fine wool mantle, a gold-studded staff listening gravely; a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt's face going very still with foreboding. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -252,12 +259,12 @@ ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Huge kinetic wide shot: the whole assembly DETONATING toward the ships at one word — thousands moving like storm-waves, like wheat flattened under wind; dust to heaven; props knocked from hulls; launching channels being clawed in the sand with bare hands; pure joyous catastrophic flight. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg17-pn2.png — standard 4:3 — THE GOAD AT HIS SHOULDER
-ATTACH: refs/odysseus.png, refs/athena.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/odysseus.png, refs/athena.png
 MATCH LINE: map each: he alone standing still in the flood; the goddess at his shoulder.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Pivot shot: a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt standing STILL as stone amid the streaming rout, grief and fury on his face, his own ship untouched behind him — and at his shoulder, manifest to him alone, Athena goddess of wisdom and war, tall grey-eyed goddess, dark hair under a crested bronze helmet pushed back from her brow, aegis cloak fringed with small serpents, tall spear, keen calm face, her spear-point of a word visibly landing. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg17-pn3.png — standard 4:3 — THE SCEPTER TAKEN
-ATTACH: refs/odysseus.png, refs/agamemnon.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/odysseus.png, refs/agamemnon.png
 MATCH LINE: map each: the scepter taken from the king's own stunned hand.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Loaded shot: a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt, cloak flung off, TAKING the great ancestral scepter out of the stunned unresisting hand of a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face — and already turning into the flood with it; kings and commons streaming past both. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -268,12 +275,12 @@ ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Assembly shot: on his feet amid the re-formed ranks, THERSITES — the ugliest man of the host: bandy-legged, lame in one foot, hunch-shouldered, sparse wool on a pointed skull, jeering face — railing with flung arm at the kings' bench, soldiers around him torn between grins and dread. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg18-pn2.png — standard 4:3 — THE SCEPTER'S STROKE
-ATTACH: refs/odysseus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/odysseus.png
 MATCH LINE: 'the crack across the back; the army's roar of laughter.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Rough-justice shot: a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt bringing the gold-studded scepter cracking across Thersites's back — the jeerer doubling, a great tear squeezing out — and around them the army, mutinous an hour ago, ROARING with laughter, benches shaking, order restored on the hinge of one humiliation. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg18-pn3.png — standard 4:3 — THE OMEN SPENT
-ATTACH: refs/odysseus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/odysseus.png
 MATCH LINE: 'speaking to all; the serpent and the nine rendered in the air of memory.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Payoff shot: a compact powerfully built hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt with the scepter high addressing the whole host — and above the assembly, rendered translucent in the air of shared memory, the SERPENT devouring the eight nestlings and the mother, and the stone coil; below, ten thousand faces lifting as the promise lands; the roar beginning at the panel's edge. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -286,12 +293,12 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ---
 
 ### i07-pg20-pn1.png — standard 4:3 — IRIS TO HECTOR (births IRIS: crop refs/iris.png)
-ATTACH: refs/hector.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/hector.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wall-top shot at Troy: Iris the rainbow messenger, slight swift goddess, wind-blown pale robes with a rainbow shimmer, golden wings at her sandals, bright eager face alighting beside Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak in the half-likeness of a watchman — her true rainbow radiance bleeding through the disguise at every edge — one arm flung toward the plain where dust rises like the sea. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 REF-BIRTH: refs/iris.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i07-pg20-pn2.png — standard 4:3 — EVERY GATE AT ONCE
-ATTACH: refs/hector.png, refs/aeneas.png, refs/sarpedon.png, refs/glaucus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/hector.png, refs/aeneas.png, refs/sarpedon.png, refs/glaucus.png
 MATCH LINE: map each among the issuing columns.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide-feeling shot at the gates of Bronze Age Troy: sloping cyclopean limestone walls, a great northeast bastion tower, mudbrick upper city, Anatolian gate shrine with standing stones, the plain and sea beyond: ALL the gates open at once, the city's whole strength streaming out in columns — Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak directing at the main gate; Aeneas, young Dardanian noble, sturdy pious warrior, short dark beard, plain strong bronze armor with a studded belt, steady devout face leading Dardanians; and at the far column's head Sarpedon king of Lycia, son of Zeus, tall grave dark-bearded warrior-king of great dignity, silver-studded armor with a lion device with Glaucus of Lycia, keen loyal young war-captain, short brown beard, Lycian armor with a golden double-spiral device beside him under Lycian standards. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -302,148 +309,148 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ---
 
 ### i07-pg21-pn1.png — standard 4:3 — THE CHALLENGER
-ATTACH: refs/paris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/paris.png
 MATCH LINE: 'springing out leopard-skinned, two spears, magnificent.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Flashy shot in the no-man's ground: a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing springing out before the Trojan front — a LEOPARD SKIN over his shoulders, curved bow slung, TWO bright spears brandished, curls shining — challenging all comers, looking, in fairness, like a god. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg21-pn2.png — standard 4:3 — THE LION FINDS THE CARCASS
-ATTACH: refs/menelaus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/menelaus.png
 MATCH LINE: 'dismounting with deliberate joy.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Answering shot: a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak stepping down from his chariot with terrible deliberate JOY — the unhurried gladness of a starving lion that has found a great carcass — his eyes fixed across the ground on one leopard-skinned figure; ten years arriving in one face. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg21-pn3.png — standard 4:3 — THE MAN WHO STEPPED ON A SNAKE
-ATTACH: refs/paris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/paris.png
 MATCH LINE: 'shrinking back into the ranks, pale, trembling.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Deflation shot: a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing recoiling backward INTO the sheltering Trojan ranks — the exact recoil of a man who has stepped on a snake in a mountain glen: the spring back, the trembling, the whiteness in the beautiful cheek; spearmen's faces around him carefully blank. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg22-pn1.png — standard 4:3 — HECTOR'S LASH
-ATTACH: refs/hector.png, refs/paris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/hector.png, refs/paris.png
 MATCH LINE: map each: the rebuke like a whip; the front rank pretending deafness.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Rebuke shot: Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak wheeling on his brother, the words visibly landing like whip-strokes; a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing taking it with lowered eyes; the whole Trojan front rank around them rigidly pretending not to hear every syllable. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg22-pn2.png — standard 4:3 — THE OFFER OF TWO MEN
-ATTACH: refs/paris.png, refs/hector.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/paris.png, refs/hector.png
 MATCH LINE: map each: the offer rising out of the shame.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Recovery shot: a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing lifting his head and speaking the one redeeming offer — hand out flat between the armies in the gesture of single combat; Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak's stern face flooding with visible, guarded JOY. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg22-pn3.png — standard 4:3 — THE SPEAR HELD CROSSWISE
-ATTACH: refs/hector.png, refs/agamemnon.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/hector.png, refs/agamemnon.png
 MATCH LINE: map each: alone between armies, pressing back his own front; the great shout stilling the field.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Iconic shot: Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak striding out ALONE into the space between two armies, holding his spear CROSSWISE to press back his own front rank — Achaean arrows and stones arcing down around him — while far opposite a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face rises with a great arresting shout, arm high, stilling both hosts to hear terms. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg23-pn1.png — standard 4:3 — THE WEB OF THE WAR
-ATTACH: refs/helen.png, refs/iris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/helen.png, refs/iris.png
 MATCH LINE: map each: the messenger arriving; the loom bearing the battles.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Upper-room shot at Troy: the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem at the great loom, weaving into a crimson web tiny discernible BATTLES — chariots, spearmen, a fallen man — while Iris the rainbow messenger, slight swift goddess, wind-blown pale robes with a rainbow shimmer, golden wings at her sandals, bright eager face, in the soft likeness of a sister-in-law with rainbow bleeding through, touches her shoulder; the plain's real dust visible through the window beyond the woven one. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg23-pn2.png — standard 4:3 — THE TEAR AND THE VEIL
-ATTACH: refs/helen.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/helen.png
 MATCH LINE: 'rising, veiling in shimmering white, one tear; sudden longing.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Transitional shot: the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem risen from the loom, wrapping herself in pale shimmering linen, one tear bright on the perfect cheek — sudden aching longing legible in her whole bearing — two handmaids falling in behind as she goes quickly toward the wall. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg23-pn3.png — standard 4:3 — THE CICADA ELDERS
-ATTACH: refs/priam.png, refs/antenor.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/priam.png, refs/antenor.png
 MATCH LINE: map each among the elders on the tower.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Tower-top shot over the Scaean gate: the ELDERS of Troy — King Priam of Troy, dignified Anatolian great-king in his strong middle years, long dark beard in formal curls streaked with grey, tall felt crown, rich long embroidered Anatolian robe, a small gold pendant on a cord at his throat, wise grave noble face, Antenor, elder counselor of Troy, lean old nobleman, white beard, plain dark Anatolian robe, tall staff, shrewd honest face, and their aged peers, fine dry talkers like cicadas on a summer tree — turning as one to watch Helen approach along the rampart, their faces holding awe and verdict in a single expression. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg24-pn1.png — standard 4:3 — SIT BY ME, DEAR CHILD
-ATTACH: refs/priam.png, refs/helen.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/priam.png, refs/helen.png
 MATCH LINE: map each: entire gentleness; her answer with wet eyes; the host below.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Tender shot on the tower: King Priam of Troy, dignified Anatolian great-king in his strong middle years, long dark beard in formal curls streaked with grey, tall felt crown, rich long embroidered Anatolian robe, a small gold pendant on a cord at his throat, wise grave noble face patting the stone beside him with entire gentleness, the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem seated at his side with wet eyes answering, both looking down at the vast host arrayed on the plain below; his old hand pointing out one distant royal figure. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg24-pn2.png — standard 4:3 — ANTENOR'S MEMOIR
-ATTACH: refs/antenor.png, refs/helen.png, refs/priam.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/antenor.png, refs/helen.png, refs/priam.png
 MATCH LINE: map each; the remembered envoy rendered faint above the parapet.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Memoir shot: Antenor, elder counselor of Troy, lean old nobleman, white beard, plain dark Anatolian robe, tall staff, shrewd honest face speaking with his staff laid across his knees — and rendered faint in the air over the parapet, the MEMORY: a stiff compact envoy standing stock-still with downcast eyes before a hostile court, and the same figure mid-speech with the court leaning helplessly toward him like grain toward wind. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg24-pn3.png — standard 4:3 — THE EMPTY PLACES
-ATTACH: refs/helen.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/helen.png
 MATCH LINE: 'scanning the host, face by face; composure failing at one absence.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. The tenderest knife: close on the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem scanning the immense host below, face by face, her composure finally failing around the eyes at an absence — one hand rising unconsciously toward her heart; the wind moving her white veil; the plain vast and brotherless below. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg25-pn1.png — standard 4:3 — THE OLD KING COMES DOWN
-ATTACH: refs/priam.png, refs/antenor.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/priam.png, refs/antenor.png
 MATCH LINE: map each in the chariot among the armies.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Plain shot: King Priam of Troy, dignified Anatolian great-king in his strong middle years, long dark beard in formal curls streaked with grey, tall felt crown, rich long embroidered Anatolian robe, a small gold pendant on a cord at his throat, wise grave noble face and Antenor, elder counselor of Troy, lean old nobleman, white beard, plain dark Anatolian robe, tall staff, shrewd honest face riding down in a chariot between the two seated armies — lambs being carried, wine of both camps being mixed in one great bowl, heralds pouring water over kings' hands; the whole plain arranged for oath. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg25-pn2.png — standard 4:3 — THE OATH OVER THE LAMBS
-ATTACH: refs/agamemnon.png, refs/priam.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/agamemnon.png, refs/priam.png
 MATCH LINE: map each at the rite, grave and exact.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Rite shot, grave and exact, no gore: a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face with arms lifted swearing the great terms over the lambs before mixed wine and both hosts; King Priam of Troy, dignified Anatolian great-king in his strong middle years, long dark beard in formal curls streaked with grey, tall felt crown, rich long embroidered Anatolian robe, a small gold pendant on a cord at his throat, wise grave noble face standing witness opposite; the sky called to witness above them both. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg25-pn3.png — standard 4:3 — I CANNOT WATCH
-ATTACH: refs/priam.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/priam.png
 MATCH LINE: 'turning the chariot back for the city, without shame.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Mercy shot: King Priam of Troy, dignified Anatolian great-king in his strong middle years, long dark beard in formal curls streaked with grey, tall felt crown, rich long embroidered Anatolian robe, a small gold pendant on a cord at his throat, wise grave noble face turned in the chariot, already driving back toward the distant gates, one hand lifted in a plain unashamed farewell; behind him both armies parting respectfully; his old face set toward home and away from what he cannot bear to see. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg26-pn1.png — standard 4:3 — THE LOTS AND THE ARMING
-ATTACH: refs/paris.png, refs/menelaus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/paris.png, refs/menelaus.png
 MATCH LINE: map each arming; the lot leaping from the shaken helmet.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Preparation shot: the marked dueling ground; a bronze helmet shaken and a LOT leaping out mid-air; on either side a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing and a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak arming piece by piece in the sight of both seated armies. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg26-pn2.png — standard 4:3 — SPEAR, SWORD, AND HEAVEN BLAMED
-ATTACH: refs/menelaus.png, refs/paris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/menelaus.png, refs/paris.png
 MATCH LINE: map each: the shearing cast; the sword in three pieces; the roar at the sky.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Duel shot in three beats of one frame: a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak's great spear-cast SHEARING through the shield of twisting a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing; the follow-up sword-stroke SHATTERING in three bright pieces off the helmet-ridge; and a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak's face thrown back mid-roar at heaven, empty hilt in his fist. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg26-pn3.png — standard 4:3 — THE DRAGGING
-ATTACH: refs/menelaus.png, refs/paris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/menelaus.png, refs/paris.png
 MATCH LINE: map each: dragged by the crest toward the Achaean line; the strap at the throat.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Raw shot: a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak bare-handed, DRAGGING a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing bodily by the horsehair CREST toward the Achaean lines — the prince scrabbling, the embroidered chin-strap cutting up under the soft of his throat — victory one fistful of helmet away; both armies on their feet. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg27-pn1.png — standard 4:3 — THE STRAP PARTS
-ATTACH: refs/menelaus.png, refs/aphrodite.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/menelaus.png, refs/aphrodite.png
 MATCH LINE: map each: the finger through the leather; the empty helmet; the mist where a man was.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Supernatural shot: Aphrodite goddess of love, goddess of overwhelming beauty, golden hair loosely bound, rose-gold and seafoam-white robes, white doves about her, smiling irresistible face half-manifest over the struggle, ONE FINGER drawn through the taut chin-strap — the leather parting like thread — a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak staggering backward gripping an EMPTY HELMET; and where the dragged man was, only curling MIST and a shimmer of roses. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg27-pn2.png — standard 4:3 — THE DEFIANCE
-ATTACH: refs/helen.png, refs/aphrodite.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/helen.png, refs/aphrodite.png
 MATCH LINE: map each: the crone-disguise failing; the bravest words a mortal speaks.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. The mandatory scene, part one: on the wall-stair, Aphrodite goddess of love, goddess of overwhelming beauty, golden hair loosely bound, rose-gold and seafoam-white robes, white doves about her, smiling irresistible face in the guise of an ancient wool-comber plucking at Helen's robe — the disguise FAILING before our eyes at the perfect throat and deathless eyes — and the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem drawn up to full height, face blazing, REFUSING her goddess to her face; the bravest posture in the whole song. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg27-pn3.png — standard 4:3 — THE THREAT, AND THE VEIL
-ATTACH: refs/aphrodite.png, refs/helen.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/aphrodite.png, refs/helen.png
 MATCH LINE: map each: the goddess unmasked in anger; the mortal veiling and obeying in silence.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. The mandatory scene, part two: Aphrodite goddess of love, goddess of overwhelming beauty, golden hair loosely bound, rose-gold and seafoam-white robes, white doves about her, smiling irresistible face blazing to FULL terrible divinity in the stairwell shadow, her beauty gone to naked threat; and the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem, terror and defeat together, wrapping the shining white veil about herself and going — silent, unseen, the goddess walking before her. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg28-pn1.png — standard 4:3 — THE CHAIR THE GODDESS CARRIED
-ATTACH: refs/aphrodite.png, refs/helen.png, refs/paris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/aphrodite.png, refs/helen.png, refs/paris.png
 MATCH LINE: map each: the goddess placing the chair; the wife's eyes turned aside; the unmarked man on the bed.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Cold chamber shot: Aphrodite goddess of love, goddess of overwhelming beauty, golden hair loosely bound, rose-gold and seafoam-white robes, white doves about her, smiling irresistible face herself — unheard-of — placing a chair for the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem, who sits with her eyes turned entirely aside; across the fragrant chamber a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing lounging unmarked and beautiful on the carved bed; the air thick with compulsion, without a grain of sweetness. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg28-pn2.png — standard 4:3 — THE SHAMELESSNESS
-ATTACH: refs/paris.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/paris.png
 MATCH LINE: 'unwounded even in spirit.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Close shot: a strikingly beautiful young Trojan prince, clean-shaven, dark curling hair bound with a thin gold band, rich embroidered Anatolian princely tunic, graceful bearing propped on one elbow, answering contempt with untroubled honeyed ease, one hand extended palm-up — a man whose spirit no defeat has ever once bruised; the beauty of the face doing all the work the character cannot. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg28-pn3.png — standard 4:3 — THE SHUT DOOR AND THE PLAIN
-ATTACH: refs/helen.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/helen.png
 MATCH LINE: 'following with her face turned away; far below, the field where a man rages.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Withdrawing shot: the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem following from the frame with her face turned from him and from the viewer, a figure of compelled silence — and through the tower window beyond, far below and tiny, the dueling-ground where an armored man with an EMPTY HELMET still stalks and rages. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg29-pn1.png — wide 16:9 — HATED LIKE BLACK DEATH
-ATTACH: refs/menelaus.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/menelaus.png
 MATCH LINE: 'stalking the lines, hunting one man; the unhelpful unanimity.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide dry-irony shot: a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak stalking along the Trojan front like a beast, hunting one man — and the whole Trojan line standing with faces of perfect unhelpful blankness: not one pointing, not one hiding him, the hatred of their own prince legible in ten thousand carefully empty expressions. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg29-pn2.png — standard 4:3 — THE VERDICT PROCLAIMED
-ATTACH: refs/agamemnon.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/agamemnon.png
 MATCH LINE: 'the scepter high, the sworn arithmetic declared.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Proclamation shot: a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face with the great scepter held high before both armies, declaring the sworn terms fulfilled and the victory of Menelaus — the Achaean host beginning to rise behind him in a wall of assent. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
@@ -454,34 +461,34 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ---
 
 ### i07-pg30-pn1.png — standard 4:3 — FRAME — SHE TOLD A GODDESS NO
-ATTACH: refs/neleid-prince.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/neleid-prince.png
 MATCH LINE: 'quiet and shaken.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: a young Ionian Greek nobleman, black curled hair bound with a fillet, fine wool chiton, gold armband, attentive noble face speaking low and shaken, his hand closed as if around something he does not want to drop. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg30-pn2.png — standard 4:3 — FRAME — GRADE BY THE ENEMY
-ATTACH: refs/singer.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png
 MATCH LINE: 'the record outweighs armies.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre answering with slow weight, one finger laid in the palm of the other hand like a coin in a scale. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg30-pn3.png — standard 4:3 — FRAME — HIS ENEMY WILL BE GRIEF
-ATTACH: refs/singer.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png
 MATCH LINE: 'rising, weary and alight at once.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre rising with the phorminx cradled, his blind face both spent and kindled, the banked fire beneath him going to its heart. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ---
 
 ### i07-pg31-pn1.png — wide 16:9 — FRAME — NO ONE HAS MOVED
-ATTACH: refs/singer.png, refs/neleid-prince.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png, refs/neleid-prince.png
 MATCH LINE: map each in the motionless hall.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Wide shot: the hall utterly motionless, every listener still in place though the song has ended; an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre standing; a young Ionian Greek nobleman, black curled hair bound with a fillet, fine wool chiton, gold armband, attentive noble face seated forward with his elbows on his knees. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg31-pn2.png — standard 4:3 — FRAME — TOMORROW THE THREAD IS CUT
-ATTACH: refs/neleid-prince.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/neleid-prince.png
 MATCH LINE: 'the completion spoken quietly.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Medium shot: a young Ionian Greek nobleman, black curled hair bound with a fillet, fine wool chiton, gold armband, attentive noble face completing the thought quietly, eyes on the fire, like a man finishing a verse he did not write. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
 ### i07-pg31-pn3.png — standard 4:3 — FRAME — ABOUT ITSELF
-ATTACH: refs/singer.png
+ATTACH (fetch from repo refs/ and attach to the generation): refs/singer.png
 MATCH LINE: 'at the doorway; the stars hard and bright.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Limited twilight palette only: sepia, umber, dusk-blue, lamplight gold. Close shot: an elderly blind Greek bard, gaunt dignified face, long white hair and full white beard, closed sightless eyes, plain undyed wool mantle over one shoulder, holding a four-stringed wooden phorminx lyre at the dark doorway, blind face lifted to hard bright stars over a black sea, the night's last words leaving him like a verdict. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 
