@@ -1,5 +1,5 @@
 # ISSUE 7 — PANEL PROMPTS (pages 1–32) · self-contained format
-Part II begins: Iliad 1–3, Tier A. Same rules as Issues 1–6. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS.
+Part II begins: Iliad 1–3, Tier A. Same rules as Issues 1–6. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS.
 Reusable refs: singer, neleid-prince, muse, chryses, chryseis, agamemnon, menelaus, odysseus, nestor, calchas, achilles, patroclus, briseis, thetis, zeus, hera, athena, aphrodite, apollo, helen, paris, priam, hector, antenor, aeneas, sarpedon, glaucus, iris (born pg20), hephaestus (born pg14).
 
 ### i07-pg01-pn1.png — full page 3:4 — COVER — THE WRATH BY THE SEA
@@ -204,7 +204,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i07-pg14-pn2.png — standard 4:3 — THE CUP-BEARER (births HEPHAESTUS: crop refs/hephaestus.png)
 ATTACH: refs/hera.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Warm comic shot: Hephaestus the smith of the gods, mighty-shouldered lame god, tangled dark beard, soot-marked tunic over one shoulder, kind clever face, a golden crutch-staff heaving up with the great two-handled cup, bustling deliberately, pouring for his mother Hera queen of the gods, majestic mature goddess, dark braided hair under a high golden crown, white and royal purple archaic robes with peacock motifs, proud sovereign face first with clownish tender ceremony; her stern face beginning to crack despite itself. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/hephaestus.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/hephaestus.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i07-pg14-pn3.png — wide 16:9 — UNQUENCHABLE LAUGHTER
 ATTACH: refs/hephaestus.png, refs/zeus.png, refs/hera.png, refs/apollo.png
@@ -288,7 +288,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i07-pg20-pn1.png — standard 4:3 — IRIS TO HECTOR (births IRIS: crop refs/iris.png)
 ATTACH: refs/hector.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wall-top shot at Troy: Iris the rainbow messenger, slight swift goddess, wind-blown pale robes with a rainbow shimmer, golden wings at her sandals, bright eager face alighting beside Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak in the half-likeness of a watchman — her true rainbow radiance bleeding through the disguise at every edge — one arm flung toward the plain where dust rises like the sea. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/iris.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/iris.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i07-pg20-pn2.png — standard 4:3 — EVERY GATE AT ONCE
 ATTACH: refs/hector.png, refs/aeneas.png, refs/sarpedon.png, refs/glaucus.png

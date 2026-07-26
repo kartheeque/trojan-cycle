@@ -1,5 +1,5 @@
 # ISSUE 8 — PANEL PROMPTS (pages 1–32) · self-contained format
-Iliad 4–6, Tier A. Same rules as Issues 1–7. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS. Restraint clauses load-bearing on pgs 8, 13, 19, 21; ichor is golden light, never red.
+Iliad 4–6, Tier A. Same rules as Issues 1–7. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS. Restraint clauses load-bearing on pgs 8, 13, 19, 21; ichor is golden light, never red.
 Reusable refs: singer, neleid-prince, muse, agamemnon, menelaus, odysseus, nestor, diomedes, ajax, idomeneus, achilles(idle), athena, aphrodite, apollo, zeus, hera, iris, hector, andromache, helen, paris, hecuba, helenus, glaucus, sarpedon, aeneas.
 
 ### i08-pg01-pn1.png — full page 3:4 — COVER — DIOMEDES BLAZING
@@ -61,7 +61,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i08-pg05-pn1.png — standard 4:3 — THE TEMPTATION (births PANDARUS: crop refs/pandarus.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Whisper shot in the Trojan press: Pandarus of Lycia-under-Ida, master archer, wiry keen-eyed warrior, short black beard, a great recurved bow of polished ibex horn among his shield-bearers — and leaning close at his ear a Trojan spearman whose edges leak faint divine radiance, one hand sketching glory in the air; the archer's head beginning to turn. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/pandarus.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/pandarus.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i08-pg05-pn2.png — close-up 4:3 — THE POISON TAKES
 ATTACH: refs/pandarus.png
@@ -128,7 +128,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i08-pg09-pn3.png — standard 4:3 — MACHAON (births MACHAON: crop refs/machaon.png)
 ATTACH: refs/menelaus.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Healer shot: Machaon son of Asclepius, healer-warrior, trim grey-flecked beard, calm practical face, a leather satchel of salves and probes at his hip kneeling at the wound with his satchel open — drawing the barbed head back out through belt and plate with exact two-handed care, salves laid ready on a cloth; a sturdy war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak enduring with set jaw; spearmen holding a shield-shade over both. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/machaon.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/machaon.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ---
 
@@ -160,7 +160,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i08-pg11-pn3.png — standard 4:3 — THE GODS IN THE HAZE (births ARES: crop refs/ares.png)
 ATTACH: refs/athena.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Half-seen divine shot through battle-haze: Ares god of war, huge brazen god of terrible beauty, dark bronze armor, blood-red cloak and horsehair crest, wolfish hungry perfect face raging huge and brazen up and down the Trojan side; opposite, Athena goddess of wisdom and war, tall grey-eyed goddess, dark hair under a crested bronze helmet pushed back from her brow, aegis cloak fringed with small serpents, tall spear, keen calm face steadying the Achaean line; and between them, sketched in the smoke, the dim striding shapes of Terror and Rout and insatiable Strife. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/ares.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/ares.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ---
 

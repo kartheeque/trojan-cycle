@@ -1,5 +1,5 @@
 # ISSUE 6 — PANEL PROMPTS (pages 1–32) · self-contained format
-Per master-plan v0.5.4. Same rules as Issues 1–5. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked with THEN CROP. Panels are TEXTLESS. Restraint clauses are load-bearing on pgs 8, 13, 23, 24.
+Per master-plan v0.5.4. Same rules as Issues 1–5. Guard clause on earthly scenes; divine clause on god scenes; twilight palette on frame panels. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Panels are TEXTLESS. Restraint clauses are load-bearing on pgs 8, 13, 23, 24.
 Reusable refs: singer, neleid-prince, muse, agamemnon, menelaus, odysseus, clytemnestra, calchas, achilles, patroclus, palamedes, helen, paris, priam, hector, antenor, nestor.
 
 ### i06-pg01-pn1.png — full page 3:4 — COVER — FIRST SIGHT OF TROY
@@ -92,7 +92,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i06-pg07-pn1.png — standard 4:3 — WEDDING CLOTHES (births IPHIGENIA: crop refs/iphigenia.png)
 ATTACH: refs/clytemnestra.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Bright terrible shot on the Mycenae road: a garlanded mule-cart traveling party — a tall proud dark-haired queen, strong handsome face with watchful eyes, deep red and gold Mycenaean dress radiant with pride, and beside her Iphigenia, eldest daughter of Agamemnon, girl of about fourteen, dark-gold hair, clear brave young face, white and saffron dress in wedding saffron, laughing at something her mother has said; escort riders; morning light. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/iphigenia.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/iphigenia.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i06-pg07-pn2.png — standard 4:3 — MY NAME
 ATTACH: refs/achilles.png, refs/patroclus.png
@@ -110,7 +110,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ATTACH: refs/iphigenia.png, refs/calchas.png, refs/agamemnon.png
 MATCH LINE: map each: the girl unbound and chin high; the averted knife-bearer; the king with covered head; the goddess breaking over all.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Full-page dawn tableau at a stone altar at the grove's edge, the army ranked in dead silence down the shore: Iphigenia, eldest daughter of Agamemnon, girl of about fourteen, dark-gold hair, clear brave young face, white and saffron dress standing AT the altar unbound, chin high, saffron dress and wind; Calchas the seer, gaunt middle-aged diviner, shaved head bound with a white fillet, dark feather-trimmed mantle, staring pale-grey eyes beside her with the bronze knife lifted and his face utterly averted; a tall imperious king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face nearby with his purple cloak pulled over his head in the ancient gesture of unwatchable grief; and breaking over the scene from above like a wave of silver light, half-manifest with arms outstretched, Artemis goddess of the wild, slim swift huntress goddess, dark hair bound back, short silver-white hunting dress, great silver bow, cool remote beautiful face — beneath the falling knife, materializing on the altar stone in coiling mist, a white HIND, while the girl's form, gone faintly translucent and radiant, is already lifting away upward into the goddess's light. No blood anywhere. Leave calm space top and bottom for ornate caption plates. The gods are radiant heroic figures: slightly larger than mortal scale, luminous golden aura outlines, serene majestic faces. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/artemis.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/artemis.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ---
 
@@ -133,7 +133,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i06-pg10-pn1.png — standard 4:3 — THE FEAST AT TENEDOS (births PHILOCTETES: crop refs/philoctetes.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Feast shot on an island beach, the fleet at anchor beyond: captains at a victory feast — prominent among them Philoctetes of Malis, rangy weathered master archer, shaggy dark hair and beard, plain hunting dress, bearing the great man-tall horn bow of Heracles, laughing, the great man-tall horn bow lying across his knees like a sleeping animal. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/philoctetes.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/philoctetes.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i06-pg10-pn2.png — standard 4:3 — THE BITE
 ATTACH: refs/philoctetes.png
@@ -286,7 +286,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i06-pg20-pn1.png — standard 4:3 — LYRNESSUS (births BRISEIS: crop refs/briseis.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Aftermath shot in a taken Anatolian town, smoke drifting, restraint absolute: among captives being led out, Briseis of Lyrnessus, gentle dark-haired young noblewoman, soft grieving dignified face, simple fine Anatolian dress — walking unbowed through the ruin of her world, eyes forward, grief carried like a queen's train. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/briseis.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/briseis.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i06-pg20-pn2.png — standard 4:3 — THE SURPRISE OF GENTLENESS
 ATTACH: refs/briseis.png, refs/achilles.png, refs/patroclus.png
@@ -303,7 +303,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i06-pg21-pn1.png — standard 4:3 — THEBE TAKEN (births CHRYSEIS: crop refs/chryseis.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Citadel-aftermath shot in a second taken town: Myrmidons in the upper court; among the captives, Chryseis daughter of the priest of Apollo, slight auburn-haired young woman, delicate face, white priestly-household dress with a laurel band — slight, out of place, a visitor swept up by the day; her laurel band askew. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/chryseis.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/chryseis.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i06-pg21-pn2.png — standard 4:3 — THE HONOR OF EETION
 ATTACH: refs/achilles.png
@@ -313,7 +313,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i06-pg21-pn3.png — standard 4:3 — THE NEWS COMES HOME (births ANDROMACHE: crop refs/andromache.png)
 ATTACH: refs/hector.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Grief shot in a Trojan chamber: Andromache, young noblewoman of Thebe, wife of Hector, warm brave gentle face, dark hair under a light veil, deep blue Anatolian gown receiving the news, her hand finding the wall, the world tilting; and Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak coming to her fast across the room, catching her by the shoulders, his own face breaking for her. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/andromache.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/andromache.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ---
 
@@ -418,7 +418,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i06-pg28-pn2.png — standard 4:3 — SARPEDON AND GLAUCUS (births SARPEDON & GLAUCUS: crop refs/sarpedon.png, refs/glaucus.png)
 ATTACH: refs/hector.png
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Formal honor shot at the citadel steps: Hector, crown prince of Troy, tall young warrior of noble bearing, short dark beard, strong open honorable face, bronze corslet over an Anatolian tunic, dark blue cloak clasping wrists as an equal with Sarpedon king of Lycia, son of Zeus, tall grave dark-bearded warrior-king of great dignity, silver-studded armor with a lion device, grave and kingly; at Sarpedon's shoulder, keen Glaucus of Lycia, keen loyal young war-captain, short brown beard, Lycian armor with a golden double-spiral device; Lycian standards behind. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/sarpedon.png, refs/glaucus.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/sarpedon.png, refs/glaucus.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i06-pg28-pn3.png — standard 4:3 — TWO HONORABLE MEN
 ATTACH: refs/hector.png, refs/sarpedon.png
@@ -430,7 +430,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i06-pg29-pn1.png — wide 16:9, letterbox — THE PRIEST ON THE SHORE (births CHRYSES: crop refs/chryses.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Letterbox dusk shot on the long beach: the camp's fires kindling all down the shore — and walking up the tide-line toward them, alone and small against the wall of beached ships, Chryses, aged priest of Apollo, long white hair and beard, white robes, a gold staff wound with the god's scarlet fillets, the gold staff with its scarlet fillets in one hand; behind him two servants bearing a chest of ransom. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-THEN CROP: refs/chryses.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
+REF-BIRTH: refs/chryses.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
 
 ### i06-pg29-pn2.png — close-up 4:3 — THE FILLETS TREMBLE
 ATTACH: refs/chryses.png

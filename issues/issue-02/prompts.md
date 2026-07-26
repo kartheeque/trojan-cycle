@@ -1,5 +1,5 @@
 # ISSUE 2 — PANEL PROMPTS (pages 1–32) · self-contained format
-Same rules as Issue 1. Shot grammar declared per panel. Guard clause baked into every earthly scene. Ref-births marked with THEN CROP. Every prompt is fully self-contained — paste it exactly as written. Panels are TEXTLESS; all lettering is programmatic at build.
+Same rules as Issue 1. Shot grammar declared per panel. Guard clause baked into every earthly scene. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Every prompt is fully self-contained — paste it exactly as written. Panels are TEXTLESS; all lettering is programmatic at build.
 Reusable refs already in refs/: singer.png, neleid-prince.png, zeus.png, themis.png, muse.png.
 NOTE: refs/themis.png exists from Issue 1.
 
