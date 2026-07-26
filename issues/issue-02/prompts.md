@@ -1,5 +1,5 @@
 # ISSUE 2 — PANEL PROMPTS (pages 1–32) · self-contained format
-Same rules as Issue 1. Shot grammar declared per panel. Guard clause baked into every earthly scene. Ref-births marked REF-BIRTH (crops are verification-side pipeline steps, committed to refs/ before dependent panels generate). Every prompt is fully self-contained — paste it exactly as written. Panels are TEXTLESS; all lettering is programmatic at build.
+Same rules as Issue 1. Shot grammar declared per panel. Guard clause baked into every earthly scene. Ref-births marked with THEN CROP. Every prompt is fully self-contained — paste it exactly as written. Panels are TEXTLESS; all lettering is programmatic at build.
 Reusable refs already in refs/: singer.png, neleid-prince.png, zeus.png, themis.png, muse.png.
 NOTE: refs/themis.png exists from Issue 1.
 
@@ -49,7 +49,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i02-pg04-pn2.png — standard 4:3 — THE ROYAL PAIR (births TYNDAREUS & LEDA: crop refs/tyndareus.png, refs/leda.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot on a Mycenaean palace porch of red-painted timber columns: the aging Mycenaean king of Sparta with grey-white beard, olive-green mantle with a gold pin, careworn kingly face and beside him the graceful mature Mycenaean queen, dark hair in long locks under a slim gold diadem, flounced tiered skirt and fitted bodice in white and river-blue, gentle serene face, receiving simple tribute of fruit and wool from kneeling herdsmen; a modest well-ordered court. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/tyndareus.png, refs/leda.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/tyndareus.png, refs/leda.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg04-pn3.png — wide 16:9 — THE QUEEN GOES TO THE RIVER
 ATTACH: refs/leda.png
@@ -97,7 +97,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i02-pg07-pn2.png — wide 16:9 — THE CHILDREN AT PLAY (births HELEN-CHILD: crop refs/helen-child.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide sunny shot of a Mycenaean palace courtyard: four royal children at play — at center a bright solemn girl of about eleven with long golden hair, simple white girl's chiton, a small radiant beauty, radiant even at play; beside her a grave dark-haired girl of the same age in a red-trimmed chiton; and two identical boys wrestling on the flagstones; a nurse watching from the colonnade. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/helen-child.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/helen-child.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg07-pn3.png — wide 16:9 — THE YOUNG HORSEMEN
 ATTACH: none
@@ -115,7 +115,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i02-pg09-pn1.png — standard 4:3 — ATHENS — THE RESTLESS KING (births THESEUS: crop refs/theseus.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot on a Bronze Age Athenian terrace overlooking a rocky citadel at evening: a powerful greying hero-king past his prime, short grey-streaked beard, dark sea-blue cloak, proud restless aging face listening intently to a kneeling TRAVELER, while beside him lounges his companion PIRITHOUS, a rangy grinning weathered warrior with a wolfskin over one shoulder; wine cups between them. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/theseus.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/theseus.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg09-pn2.png — close-up 4:3 — THE RESOLVE
 ATTACH: refs/theseus.png
@@ -149,7 +149,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ATTACH: refs/helen-child.png
 MATCH LINE: 'the child seated stiff and unbowed.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Interior of a small stone chamber in Aphidna in Attica: a small Bronze Age hill fort of rough stone and mudbrick above olive groves: a bright solemn girl of about eleven with long golden hair, simple white girl's chiton, a small radiant beauty seated stiff and unbowed on a bench, chin high; an aged noblewoman, white hair under a veil, plain dark matron's robes, kind weary face gently laying a woven shawl over the child's shoulders, her kind weary face full of pity; a small window of pale light. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/aethra.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/aethra.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg11-pn2.png — standard 4:3 — THE WINDOW
 ATTACH: refs/aethra.png, refs/helen-child.png
@@ -160,7 +160,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ATTACH: refs/tyndareus.png
 MATCH LINE: 'the aging king with a hand on each son's shoulder.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot in the Spartan megaron: a lean athletic young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, short riding kilt and a broad-shouldered young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, leather boxing thongs bound on his forearms, now young men, armed with spears and standing shoulder to shoulder before the aging Mycenaean king of Sparta with grey-white beard, olive-green mantle with a gold pin, careworn kingly face, who grips a shoulder of each; torchlight, resolve. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/castor.png, refs/polydeuces.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/castor.png, refs/polydeuces.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ---
 
@@ -201,7 +201,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i02-pg14-pn1.png — standard 4:3 — HELEN AT THE LOOM (births HELEN & CLYTEMNESTRA: crop refs/helen.png, refs/clytemnestra.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Interior of the Spartan palace weaving room, sunlight through a clerestory: the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem standing at a great upright loom, a quiet radiance on her; beside her a tall proud dark-haired young queen, strong handsome face with watchful eyes, deep red and gold Mycenaean dress winding wool, watchful and proud; attendant women behind. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/helen.png, refs/clytemnestra.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/helen.png, refs/clytemnestra.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg14-pn2.png — wide 16:9 — THE HERALDS ARRIVE
 ATTACH: none
@@ -221,7 +221,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i02-pg15-pn2.png — wide 16:9 — THE SUITORS PRESENTED (births AJAX, DIOMEDES, IDOMENEUS: crop refs/ajax.png, refs/diomedes.png, refs/idomeneus.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide interior of the great court: a line of magnificent young kings presented — a HUGE towering warrior with a body shield like a wall, brown-bearded, young and mountain-built (Ajax); a keen compact fierce-eyed young war-king with dark curls and a boar device on his baldric (Diomedes); a grave older-young king with a Cretan double-axe emblem and square black beard (Idomeneus); and a rangy archer cradling a GREAT MAN-TALL BOW of polished horn (Philoctetes); attendants with their gifts behind each. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/ajax.png, refs/diomedes.png, refs/idomeneus.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/ajax.png, refs/diomedes.png, refs/idomeneus.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg15-pn3.png — standard 4:3 — THE GIFTS
 ATTACH: none
@@ -248,7 +248,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ### i02-pg17-pn1.png — standard 4:3 — THE MAN WITH NO GIFTS (births ODYSSEUS: crop refs/odysseus.png)
 ATTACH: none
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot at the palace gate: a compact powerfully built young hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt arriving on foot with two plain companions and no gift-wagons, a single travel bundle on a spear over his shoulder, taking in the splendor around him with a half-smile. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/odysseus.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/odysseus.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg17-pn2.png — standard 4:3 — READING THE ROOM
 ATTACH: refs/odysseus.png
@@ -259,7 +259,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ATTACH: refs/odysseus.png
 MATCH LINE: 'the traveler's look across the court.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot across a sunlit service court: at a well among household women, a young noblewoman of quiet grace, dark chestnut hair modestly bound, soft thoughtful face with steady intelligent eyes, cream and dusk-blue Mycenaean dress, a light veil at her shoulders drawing water, meeting the distant gaze of a compact powerfully built young hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt (at frame edge) for one steady grave moment before lowering her eyes; chaste, quiet, decisive. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/penelope.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/penelope.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ---
 
@@ -296,7 +296,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ATTACH: refs/helen.png
 MATCH LINE: 'the golden princess placing the garland.'
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot: the most beautiful woman of the age: long golden hair in soft waves, luminous calm unearthly beautiful face, white and gold flounced Mycenaean dress, gold diadem placing the myrtle garland on the bowed head of a sturdy young war-king with red-gold hair and short red beard, open honest face, bronze corslet under a crimson cloak; directly behind him stands his elder brother a tall imperious young king, dense black beard, gold-studded corslet and deep purple cloak, gold scepter, heavy-browed proud commanding face, satisfaction on his heavy-browed face. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/menelaus.png, refs/agamemnon.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/menelaus.png, refs/agamemnon.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg20-pn3.png — wide 16:9 — THE OATH HOLDS
 ATTACH: refs/ajax.png, refs/diomedes.png, refs/idomeneus.png
@@ -326,7 +326,7 @@ PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink out
 ATTACH: refs/tyndareus.png, refs/odysseus.png
 MATCH LINE: map each; the traveler waits apart.
 PROMPT: Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot in a colonnade: the aging Mycenaean king of Sparta with grey-white beard, olive-green mantle with a gold pin, careworn kingly face speaking earnestly to his brother a kindly aging nobleman, brown-grey beard, plain rich mantle, anxious loving face, gesturing toward a compact powerfully built young hero, broad-chested but shorter than the great kings, russet-brown hair and short beard, keen grey observant eyes, plain sturdy traveler's wool cloak over a simple kilt who waits respectfully apart; Icarius's kindly face torn between gratitude and dread. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
-REF-BIRTH: refs/icarius.png — not the image generator's task: after this panel passes verification, the verification side crops and commits the ref(s) to the repo. Do not generate any panel that ATTACHes these ref(s) until they exist in refs/.
+THEN CROP: refs/icarius.png — crop the named figure(s) tightly (head and shoulders) from this panel before generating any dependent panel.
 
 ### i02-pg22-pn2.png — standard 4:3 — THE QUIET WEDDING
 ATTACH: refs/odysseus.png, refs/penelope.png
