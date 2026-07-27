@@ -121,13 +121,25 @@ Read the complete panel block from that heading up to the next panel heading or 
 - title;
 - aspect ratio and orientation;
 - `ATTACH` paths;
-- `MATCH LINE` mappings;
-- complete `PROMPT` text;
+- complete `PROMPT` text, which is the fenced ```text block immediately following the `PROMPT:` label;
+- any `MATCH-REVIEW` warning;
 - regeneration notes;
 - dependency notes;
 - `REF-BIRTH` or equivalent instructions.
 
 Do not paraphrase, shorten, improve, normalize, or silently correct the canonical prompt. Submit the complete prompt intact to the image-generation system.
+
+### Block format
+
+Panel blocks are normalized so the fenced block is copy-paste ready with no editing. Inside it, in order:
+
+1. an explicit aspect-ratio directive;
+2. the reference-identity instruction, stating positionally which attached image is which subject;
+3. the canonical prompt text.
+
+Submit the entire fenced block verbatim. Because the identity mapping now travels inside the prompt, there is no separate `MATCH LINE` to apply — but the attachments must still be supplied in the order given by `ATTACH`, since the identity instruction refers to them positionally as the first, second and third attached image.
+
+`tools/normalize_prompts.py` regenerates this form and is idempotent; a block that already contains a fenced block is left untouched.
 
 If the same filename appears in multiple candidate files and authority cannot be established confidently, stop and report the ambiguity.
 
@@ -137,7 +149,8 @@ Treat the canonical block as follows:
 
 - `PROMPT`: authoritative visual instruction.
 - `ATTACH`: mandatory binary image inputs.
-- `MATCH LINE`: authoritative mapping between attachments and depicted subjects.
+- reference-identity line inside the fenced block: authoritative mapping between attachments and depicted subjects, keyed to `ATTACH` order.
+- `MATCH-REVIEW`: the mapping could not be derived automatically and the original shorthand is preserved inside the block. This is an ambiguous identity mapping — stop and report rather than guessing the order.
 - panel heading: authoritative filename, framing, orientation, and aspect ratio.
 - regeneration notes: mandatory defect-avoidance requirements.
 - negative clauses: equally binding as positive clauses.
