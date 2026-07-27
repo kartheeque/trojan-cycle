@@ -313,34 +313,31 @@ REF-BIRTH: refs/castor.png, refs/polydeuces.png — not the image generator's ta
 
 ### i02-pg12-pn1.png — wide 16:9 — THE RIDE INTO ATTICA
 ATTACH (fetch from repo refs/ and attach to the generation): refs/castor.png, refs/polydeuces.png
-MATCH-REVIEW: the identity mapping could not be derived automatically. The original shorthand is preserved verbatim inside the block below - rewrite it as an explicit positional instruction ("the first attached image is ...") before generating.
 PROMPT:
 ```text
 Aspect ratio 16:9 wide landscape panel.
 
-map each at the head of the column.
+Match the attached reference images exactly: the first attached image is the lean athletic young hero riding at the head of the column (refs/castor.png) - reproduce that face, hair and apparent age exactly; the second attached image is the broad-shouldered young hero striding beside his horse (refs/polydeuces.png) - reproduce that face, hair and apparent age exactly.
 
 Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide dawn shot: a lean athletic young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, short riding kilt on horseback and a broad-shouldered young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, leather boxing thongs bound on his forearms striding beside him leading a Spartan war-band over scrub hills, a moving forest of long thrusting spears behind them, first light on bronze; olive groves below. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 ```
 ### i02-pg12-pn2.png — standard 4:3 — APHIDNA YIELDS
 ATTACH (fetch from repo refs/ and attach to the generation): refs/castor.png, refs/polydeuces.png, refs/helen-child.png
-MATCH-REVIEW: the identity mapping could not be derived automatically. The original shorthand is preserved verbatim inside the block below - rewrite it as an explicit positional instruction ("the first attached image is ...") before generating.
 PROMPT:
 ```text
 Aspect ratio 4:3 landscape (standard comic panel).
 
-map each: the brothers entering, the child running to them.
+Match the attached reference images exactly: the first attached image is the lean athletic young hero entering the gate (refs/castor.png) - reproduce that face, hair and apparent age exactly; the second attached image is the broad-shouldered young hero entering beside him (refs/polydeuces.png) - reproduce that face, hair and apparent age exactly; the third attached image is the golden-haired girl running to her brothers (refs/helen-child.png) - reproduce that face, hair and apparent age exactly.
 
 Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Medium shot at the broken-open timber gate of Aphidna in Attica: a small Bronze Age hill fort of rough stone and mudbrick above olive groves: a lean athletic young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, short riding kilt and a broad-shouldered young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, leather boxing thongs bound on his forearms entering with lowered spears as the garrison kneels in surrender; a bright solemn girl of about eleven with long golden hair, simple white girl's chiton, a small radiant beauty running to her brothers with arms out; no slaughter, no bodies — the fort yields. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 ```
 ### i02-pg12-pn3.png — wide 16:9 — THE ROAD HOME
 ATTACH (fetch from repo refs/ and attach to the generation): refs/castor.png, refs/helen-child.png, refs/aethra.png
-MATCH-REVIEW: the identity mapping could not be derived automatically. The original shorthand is preserved verbatim inside the block below - rewrite it as an explicit positional instruction ("the first attached image is ...") before generating.
 PROMPT:
 ```text
 Aspect ratio 16:9 wide landscape panel.
 
-map each: the child riding before her brother; the old woman walking beside the horse.
+Match the attached reference images exactly: the first attached image is the lean athletic young hero on horseback (refs/castor.png) - reproduce that face, hair and apparent age exactly; the second attached image is the golden-haired girl riding before him (refs/helen-child.png) - reproduce that face, hair and apparent age exactly; the third attached image is the aged noblewoman walking beside the horse with her bundle (refs/aethra.png) - reproduce that face, hair and apparent age exactly. The broad-shouldered brother walking at the horse's other flank has no attached reference in this panel; render him consistently with the description in the prompt text.
 
 Classic 1970s Amar Chitra Katha comic book art style: bold black ink outlines with rich fine linework and delicate hatching, warm flat-toned color fills, detailed dignified rendering, heroic realistic anatomy, dignified expressive faces, clean composition. Wide homeward shot on a hill road at golden afternoon: a bright solemn girl of about eleven with long golden hair, simple white girl's chiton, a small radiant beauty riding safe before a lean athletic young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, short riding kilt on his horse, her head against his chest; a broad-shouldered young Spartan hero, clean-shaven, dark cropped hair under a white felt cap, leather boxing thongs bound on his forearms walking at the horse's other flank; and walking beside them, a captive now with her bundle, an aged noblewoman, white hair under a veil, plain dark matron's robes, kind weary face, dignified in loss; the Spartan spears behind. Strictly Bronze Age architecture only: rough cyclopean stone, mudbrick, timber, no columned temples, no tiled roofs, no classical-era anachronisms. Absolutely no text, no lettering, no speech balloons, no captions anywhere in the image.
 ```
