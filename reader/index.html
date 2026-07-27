@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Trojan Cycle — Reader</title>
+<style>
+@font-face{font-family:'ComicNeue';src:url('../fonts/ComicNeue-Bold.ttf');font-weight:bold}
+@font-face{font-family:'ComicNeueI';src:url('../fonts/ComicNeue-BoldItalic.ttf')}
+@font-face{font-family:'Bangers';src:url('../fonts/Bangers-Regular.ttf')}
+:root{--paper:#f5ecd8;--cream:#faeec4;--ink:#14100c;--sepia:#eee0c4;--gold:#d4af37}
+*{box-sizing:border-box}
+body{margin:0;background:#2a241c;font-family:'ComicNeue',sans-serif;color:var(--ink)}
+header{position:sticky;top:0;z-index:10;background:#1c1710;color:var(--cream);padding:10px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 8px #0008}
+header h1{font-family:'Bangers';font-size:26px;letter-spacing:2px;margin:0;color:var(--gold)}
+select,button{font-family:'ComicNeue';font-weight:bold;font-size:15px;padding:6px 10px;border:2px solid var(--ink);border-radius:6px;background:var(--cream);cursor:pointer}
+#status{font-size:13px;color:#c9b98a}
+main{max-width:900px;margin:0 auto;padding:18px 10px 80px}
+.page{background:var(--paper);border:3px solid var(--ink);border-radius:4px;box-shadow:6px 6px 0 #000a;margin:26px 0;padding:22px 22px 40px;position:relative}
+.pagenum{position:absolute;bottom:10px;right:16px;font-size:15px}
+.pnwrap{margin:14px 0}
+.cap{background:var(--cream);border:3px solid var(--ink);box-shadow:4px 4px 0 #000;padding:9px 14px;margin:10px auto;max-width:92%;font-size:14.5px;text-transform:uppercase;line-height:1.35}
+.cap.ornate{border-width:4px;background:linear-gradient(var(--cream),#f3e3b0);border-image:linear-gradient(45deg,var(--gold),#8a6d1f) 1;font-size:15px}
+.dlg{background:#fff;border:3px solid var(--ink);border-radius:14px;box-shadow:4px 4px 0 #000;padding:9px 14px;margin:10px auto;max-width:86%;font-size:14.5px;line-height:1.35}
+.dlg b{text-transform:uppercase}
+.fn{background:var(--sepia);border:2px solid var(--ink);padding:6px 12px;margin:8px auto;max-width:88%;font-family:'ComicNeueI';font-size:12.5px}
+.gnome{background:linear-gradient(#f7ecc8,#efdc9e);border:5px double var(--ink);padding:20px 24px;margin:14px auto;max-width:85%;font-size:17px;text-align:center;font-family:'ComicNeueI';line-height:1.5}
+.plate{background:#1c1710;color:var(--gold);border:3px solid var(--gold);padding:8px 14px;margin:12px auto;max-width:70%;text-align:center;font-family:'Bangers';letter-spacing:2px;font-size:18px}
+img.art{display:block;max-width:100%;margin:0 auto;border:4px solid var(--ink);box-shadow:5px 5px 0 #0009}
+.pending{border:4px dashed #a08c5a;background:repeating-linear-gradient(45deg,#efe6cf,#efe6cf 12px,#e7dcc0 12px,#e7dcc0 24px);color:#7a683f;display:flex;align-items:center;justify-content:center;height:220px;margin:0 auto;font-size:14px;text-transform:uppercase;letter-spacing:1px;text-align:center;padding:10px}
+.cover{text-align:center}
+.cover .series{font-family:'Bangers';font-size:22px;letter-spacing:3px;color:#6a5620}
+.cover .title{font-family:'Bangers';font-size:56px;letter-spacing:3px;color:var(--gold);text-shadow:3px 3px 0 var(--ink);margin:6px 0 14px}
+footer.note{text-align:center;color:#8d7f60;font-size:12px;padding:24px}
+</style>
+</head>
+<body>
+<header>
+<h1>THE TROJAN CYCLE</h1>
+<select id="issueSel"></select>
+<button id="prevBtn">◀ Prev issue</button>
+<button id="nextBtn">Next issue ▶</button>
+<span id="status"></span>
+</header>
+<main id="main"></main>
+<footer class="note">Living reader — text from the issue scripts; panels appear automatically as generated art lands on this branch. Pending panels are placeholders. Final lettered PDFs live in <code>releases/</code>.</footer>
+<script>
+const ISSUES=[1,2,3,4,5,6,7,8];
+const sel=document.getElementById('issueSel'),main=document.getElementById('main'),status=document.getElementById('status');
+const pad=n=>String(n).padStart(2,'0');
+async function loadIssue(n){
+  main.innerHTML='<p style="color:#c9b98a">Loading…</p>';
+  const r=await fetch(`data/issue-${pad(n)}.json`);
+  const d=await r.json();
+  document.title=`Issue ${n} — ${d.title} · The Trojan Cycle`;
+  main.innerHTML=''; let have=0,total=0;
+  for(const pg of d.pages){
+    const page=document.createElement('div');page.className='page';
+    if(pg.n===1){
+      const c=document.createElement('div');c.className='cover';
+      c.innerHTML=`<div class="series">THE TROJAN CYCLE · ISSUE ${d.issue}</div><div class="title">${d.title}</div>`;
+      page.appendChild(c);
+    }
+    for(const pan of pg.panels){
+      total++;
+      const w=document.createElement('div');w.className='pnwrap';
+      const items=pan.items||[];
+      const caps=items.filter(i=>i[0]==='CAPTION'),dlgs=items.filter(i=>i[0]==='DLG'),
+            fns=items.filter(i=>i[0]==='FOOTNOTE'),gn=items.filter(i=>i[0]==='GNOME'),pl=items.filter(i=>i[0]==='PLATE');
+      const ornate=(pg.n===8||pg.n===19||pg.n===32);
+      const lead=(caps.length&&!dlgs.length)?caps[0]:null;
+      if(lead)w.appendChild(box('cap'+(ornate?' ornate':''),lead[2]));
+      const img=new Image();img.className='art';
+      img.src=`../issues/issue-${pad(d.issue)}/art/i${pad(d.issue)}-pg${pad(pg.n)}-pn${pan.pn}.png`;
+      img.onload=()=>{have++;upd()};
+      img.onerror=()=>{const ph=document.createElement('div');ph.className='pending';
+        ph.textContent=`panel pending — i${pad(d.issue)}-pg${pad(pg.n)}-pn${pan.pn}`;img.replaceWith(ph)};
+      w.appendChild(img);
+      for(const c of (lead?caps.slice(1):caps))w.appendChild(box('cap'+(ornate?' ornate':''),c[2]));
+      for(const g of dlgs){const b=document.createElement('div');b.className='dlg';b.innerHTML=`<b>${g[1]}:</b> \u201C${esc(g[2])}\u201D`;w.appendChild(b)}
+      for(const f of fns)w.appendChild(box('fn',f[2]));
+      for(const g of gn)w.appendChild(box('gnome','\u201C'+g[2].replace(/^\"|\"$/g,'')+'\u201D'));
+      for(const p of pl)w.appendChild(box('plate',p[2]));
+      page.appendChild(w);
+    }
+    const num=document.createElement('div');num.className='pagenum';num.textContent=pg.n;page.appendChild(num);
+    main.appendChild(page);
+  }
+  function upd(){status.textContent=`Issue ${n}: ${have}/${total} panels generated`}
+  setTimeout(upd,800);
+  history.replaceState(null,'',`?issue=${n}`);
+}
+function box(cls,txt){const e=document.createElement('div');e.className=cls;e.textContent=txt;return e}
+function esc(s){const t=document.createElement('span');t.textContent=s;return t.innerHTML}
+for(const i of ISSUES){const o=document.createElement('option');o.value=i;o.textContent=`Issue ${i}`;sel.appendChild(o)}
+fetchTitles();
+async function fetchTitles(){for(const i of ISSUES){try{const d=await(await fetch(`data/issue-${pad(i)}.json`)).json();sel.options[ISSUES.indexOf(i)].textContent=`Issue ${i} — ${d.title}`}catch(e){}}}
+sel.onchange=()=>loadIssue(+sel.value);
+document.getElementById('prevBtn').onclick=()=>{if(+sel.value>ISSUES[0]){sel.value=+sel.value-1;loadIssue(+sel.value)}};
+document.getElementById('nextBtn').onclick=()=>{if(+sel.value<ISSUES[ISSUES.length-1]){sel.value=+sel.value+1;loadIssue(+sel.value)}};
+const q=new URLSearchParams(location.search).get('issue');
+sel.value=q&&ISSUES.includes(+q)?+q:1;
+loadIssue(+sel.value);
+</script>
+</body>
+</html>
